@@ -4,3 +4,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> emotion_detector("I hate working long hours")
 {'anger': 0.63842183, 'disgust': 0.03845543, 'fear': 0.024599781, 'joy': 0.0076472494, 'sadness': 0.33087572, 'dominant_emotion': 'anger'}
 >>> 
+

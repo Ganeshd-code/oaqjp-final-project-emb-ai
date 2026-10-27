@@ -78,3 +78,4 @@ It also determines the **dominant emotion** from the input text and displays the
 
 ## Author
 Developed by Ganesh
+
