@@ -1,0 +1,6 @@
+Python 3.11.4 (main, Jun 20 2023, 16:04:19) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import emotion_detector
+>>> emotion_detector("I am so happy I am doing this")
+{'anger': 0.003565677, 'disgust': 0.0019253457, 'fear': 0.006830704, 'joy': 0.9679802, 'sadness': 0.040182654, 'dominant_emotion': 'joy'}
+>>> 

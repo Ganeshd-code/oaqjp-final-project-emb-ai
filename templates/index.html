@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+        }
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+        #system_response {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Emotion Detection</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="textToAnalyze">Enter text to detect emotion:</label>
+                    <textarea class="form-control" id="textToAnalyze" rows="4" placeholder="Type a statement here..."></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="RunSentimentAnalysis()">Run Sentiment Analysis</button>
+                <div id="system_response"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
